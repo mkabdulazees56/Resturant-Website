@@ -1,0 +1,234 @@
+:root {
+    --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-primary: "Amatic SC", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+  }
+  /* Colors */
+  :root {
+    --color-default: #212529;
+    --color-primary: #ce1212;
+    --color-secondary: #37373f;
+  }
+  
+  /* Smooth scroll behavior */
+  :root {
+    scroll-behavior: smooth;
+  }
+
+
+  body {
+    font-family: var(--font-default);
+    color: var(--color-default);
+    
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-secondary);
+  }
+
+  .logo{
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .navbar{
+    background-color: white;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+  }
+
+  h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+  }
+
+  .about-header h2,
+  .menu-header h2,
+  .events-header h2,
+  .chefs-header h2,
+  .gallery-header h2,
+  .book-table-header h2,
+  .contact-header h2{
+    font-size: 14px;
+    color: #7f7f90;
+    text-transform: uppercase;
+    font-family: var(--font-default);
+  }
+
+  .about-header p,
+  .menu-header p,
+  .events-header p,
+  .chefs-header p,
+  .gallery-header p,
+  .book-table-header p,
+  .contact-header p{
+    font-size: 48px;    
+    font-family: var(--font-primary);
+  }
+
+.about-header p span,
+.menu-header p span,
+.events-header p span,
+.chefs-header p span,
+.gallery-header p span,
+.book-table-header p span,
+.contact-header p span{
+    color: var(--color-primary);
+}
+
+.menu .nav-item a{
+    margin: 0 10px;
+    padding: 1px 0;
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+.menu .nav-item a:hover, .navbar ul li a:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+}
+.menu .nav li .active{
+  font-size: 20px;
+  border-bottom: var(--color-primary) 2px solid;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.navbar ul li a{
+  margin: 0 3px;
+  padding: 0;
+  font-size: 20px;
+  color: var(--color-secondary);
+  border: 0;
+  border-bottom: var(--color-secondary) 0px solid;
+}
+.navbar ul li a.active{
+    border-bottom: var(--color-primary) 2px solid;
+    font-weight: 600;
+    color: var(--color-primary) !important;
+}
+
+.pop-up{
+  width:25%;
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  top: 30%;
+  left: 37.5%;
+  transform: scale(1);
+  }
+
+.owl-carousel .owl-item.active.center .card{
+  margin: 0 10px;
+  transform: scale(1.2) !important;
+  opacity: 1 !important;
+}
+.owl-carousel .card{
+  transition: all 0.5s;
+  opacity: 0.9;
+  transform: scale(0.9);
+  }
+
+.chefs .card{
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+}
+.chefs .card .social-icons{
+  padding-right: 20px ;
+  opacity: 0;
+}
+
+.chefs .card .social-icons .fa-brands{
+  color: var(--color-primary);
+  font-size: 20px;
+}
+
+.chefs .card .social-icons .fa-brands:hover{
+  color: var(--color-secondary);
+  transform: scale(1.05);
+}
+
+.chefs .card:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.chefs .card:hover .social-icons{
+  cursor: pointer;
+  padding-right: 0px !important;
+  opacity: 1;
+  transition: 1s;
+}
+
+.contact .contact-list .fa-solid{
+  color: var(--color-primary);
+  font-size: 150%;
+}
+.contact .contact-list h4{
+  color: #6c757d;
+}
+
+.contact .form, .book-table-main{
+  box-shadow: 0 0 30px rgb(0 0 0 / 12%);
+}
+.btn{
+  background-color: var(--color-primary);
+}
+
+.btn:hover{
+  background: rgb(226, 2, 2) !important;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+.footer .social-icons .fa-brands{
+  color: #fff;
+  padding: 10px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+} 
+
+.footer .fa-solid{
+  color: #fff;
+}
+.footer h5{
+  color: white !important;
+  font-weight: 400;
+}
+
+.footer p{
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+a .outline{
+  background-color:transparent !important;
+}
+
+a .outline:hover{
+  color: var(--color-primary) !important;
+  background-color: transparent !important;
+}
+
+@media (min-width: 1000px){
+    
+  .hero {
+    height: 100vh;
+  }
+  .about, .menu, .events, .chefs, .gallary, .contact, .book-table{
+    margin-top: 20vh !important;  
+  }
+}
+
+@media (max-width: 720px){
+    
+  .pop-up {
+    width: 70%;
+    left:15%;
+
+  }
+}

@@ -1,0 +1,41 @@
+
+body{
+    background-image: url("../stats-bg.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+
+.form{
+    background-color: rgba(0,0,0,0.70);
+}
+.container-fluid{
+    background-color: rgba(0,0,0,0.75);
+}
+.form label {
+    color: #fff;
+}
+
+.pop-up{
+    width:25%;
+    position: absolute;
+    box-shadow: 0 0 30px rgb(0 0 0 / 50%);
+    /* background-color: rgba(0,0,0,0.9); */
+    background-color: #fff;
+    border-radius: 10px;
+    top: 28%;
+    left: 37.5%;
+    transform: scale(1);
+    }
+.admin-form {
+        height: 100vh;
+}
+
+@media (max-width: 720px){
+    
+    .pop-up {
+      width: 70%;
+      left:15%;
+  
+    }
+  }
