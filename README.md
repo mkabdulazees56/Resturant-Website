@@ -1,5 +1,11 @@
-# Resturant-Website
-5th semester final project Restaurant website using PHP , HTML , CSS, JS MySQL Data base used for Backend for data storage
+# Resturant-Website-PHP
+The Restaurant Website project I developed during my 5th semester is a dynamic and user-friendly platform that offers visitors a seamless experience in browsing and ordering food from the restaurant menu. The website is built using PHP, HTML, CSS, and JS, with MySQL database used for backend data storage.
+
+The website features a sleek and modern design with easy navigation for users to access the different sections, such as menu, about us, contact, and ordering system. Customers can view the restaurant's menu with clear images and detailed descriptions of each dish. They can add items to their cart and checkout securely using the payment gateway integrated into the website.
+
+The website also has a backend system for the restaurant's admin, where they can add, edit, or delete menu items, manage orders, and view customer details. The database used ensures efficient storage and retrieval of data, making the process seamless for both the customers and the restaurant owners.
+
+Overall, the Restaurant Website project is an excellent demonstration of my skills in web development, specifically in PHP, HTML, CSS, and JS, as well as my ability to create dynamic and functional websites that meet the needs of both businesses and their customers.
 
 
 Website preview 
